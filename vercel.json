@@ -3,5 +3,8 @@
   "buildCommand": "cd frontend && npm install && npm run build",
   "outputDirectory": "frontend/dist",
   "framework": null,
+  "functions": {
+    "api/**/*.js": { "includeFiles": "frontend/src/data/**" }
+  },
   "rewrites": [{ "source": "/api/(.*)", "destination": "/api/$1" }]
 }
