@@ -25,6 +25,23 @@ function MapResizer() {
   return null;
 }
 
+// Mirrors the 5-stop scale in riskColors.js so the legend reads as the map's key.
+const LEGEND_GRADIENT =
+  "linear-gradient(to right, #16a34a, #22c55e, #f59e0b, #f97316, #ef4444)";
+
+function MapLegend() {
+  return (
+    <div className="pointer-events-none absolute bottom-4 left-4 z-[1000] rounded-lg border border-border bg-surface/90 p-3 text-xs text-text-secondary backdrop-blur">
+      <div className="mb-1.5 font-medium text-text-primary">Building-stock risk index</div>
+      <div className="h-2 w-44 rounded-full" style={{ background: LEGEND_GRADIENT }} />
+      <div className="mt-1 flex justify-between">
+        <span>0 · lower</span>
+        <span>100 · higher</span>
+      </div>
+    </div>
+  );
+}
+
 function isDimmed(props, filters) {
   if (filters.canton !== "all" && props.canton !== filters.canton) return true;
   if (filters.riskLevel !== "all" && props.risk_level !== filters.riskLevel) return true;
@@ -61,24 +78,27 @@ function Map({ filters, selectedCode, onSelect }) {
   };
 
   return (
-    <MapContainer
-      center={LUX_CENTER}
-      zoom={DEFAULT_ZOOM}
-      className="h-full w-full bg-bg"
-      zoomControl={false}
-      attributionControl
-    >
-      <MapResizer />
-      <TileLayer url={TILE_URL} attribution={TILE_ATTRIBUTION} />
-      <GeoJSON
-        ref={geoJsonRef}
-        data={communes}
-        style={styleFeature}
-        onEachFeature={onEachFeature}
-        // key forces re-style when filters or selection change
-        key={`${filters.canton}-${filters.riskLevel}-${filters.smallStockOnly}-${selectedCode}`}
-      />
-    </MapContainer>
+    <div className="relative h-full w-full">
+      <MapContainer
+        center={LUX_CENTER}
+        zoom={DEFAULT_ZOOM}
+        className="h-full w-full bg-bg"
+        zoomControl={false}
+        attributionControl
+      >
+        <MapResizer />
+        <TileLayer url={TILE_URL} attribution={TILE_ATTRIBUTION} />
+        <GeoJSON
+          ref={geoJsonRef}
+          data={communes}
+          style={styleFeature}
+          onEachFeature={onEachFeature}
+          // key forces re-style when filters or selection change
+          key={`${filters.canton}-${filters.riskLevel}-${filters.smallStockOnly}-${selectedCode}`}
+        />
+      </MapContainer>
+      <MapLegend />
+    </div>
   );
 }
 
