@@ -87,5 +87,16 @@ RISK_WEIGHTS = {
 # Permit trend: compare the mean of the last N years vs the prior N years.
 PERMIT_TREND_WINDOW_YEARS = 5
 
+# Boundary commune name -> census commune name(s) to aggregate, for the four
+# communes where the 2023 boundary file and 2021 census disagree. Two are pure
+# name-spelling differences; two are mergers post-dating the census, where the
+# component census communes are summed into the merged boundary commune.
+COMMUNE_ALIASES = {
+    "Redange/Attert": ["Redange-sur-Attert"],
+    "Rosport-Mompach": ["Rosport - Mompach"],
+    "Bous-Waldbredimus": ["Bous", "Waldbredimus"],
+    "Groussbus-Wal": ["Grosbous", "Wahl"],
+}
+
 # Network
 REQUEST_TIMEOUT = 90  # seconds
