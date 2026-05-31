@@ -78,6 +78,15 @@ ERA_CODES = [
 # --- Risk model weights (commune-level heuristic, documented in README) ---
 # Construction-era-by-commune does not exist in Luxembourg open data, so the
 # commune risk score is built from signals that DO exist at commune grain.
+# Permit canton labels -> boundary canton names. The permits dataflow splits
+# Luxembourg into city vs rest and names Esch differently; the two Luxembourg
+# series are summed per year so each boundary canton has one trend.
+PERMIT_CANTON_TO_BOUNDARY = {
+    "Esch": "Esch-sur-Alzette",
+    "Luxembourg city": "Luxembourg",
+    "Luxembourg (except Luxembourg City)": "Luxembourg",
+}
+
 RISK_WEIGHTS = {
     "vacancy_rate": 0.45,        # unoccupied dwellings — neglect / aging proxy
     "small_building_share": 0.35,  # 1–2 dwelling stock vs managed apartment blocks
