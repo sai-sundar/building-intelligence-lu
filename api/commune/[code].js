@@ -5,10 +5,13 @@
 // the UI shows a graceful fallback — the endpoint never 500s on AI failure.
 const { loadData } = require("../../lib/communeData");
 
-const GEMINI_MODEL = "gemini-1.5-flash";
+const GEMINI_MODEL = "gemini-2.5-flash";
 const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
-const MAX_OUTPUT_TOKENS = 220;
+const MAX_OUTPUT_TOKENS = 300;
 const TEMPERATURE = 0.3;
+// gemini-2.5-flash spends output tokens on internal reasoning by default, which
+// starves a short factual summary; disable it for fast, complete narratives.
+const THINKING_BUDGET = 0;
 
 const SYSTEM_PROMPT =
   "You are a construction risk analyst assistant for SECO Luxembourg, an " +
@@ -56,7 +59,11 @@ async function generateNarrative(props) {
     body: JSON.stringify({
       systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
       contents: [{ role: "user", parts: [{ text: buildUserPrompt(props) }] }],
-      generationConfig: { maxOutputTokens: MAX_OUTPUT_TOKENS, temperature: TEMPERATURE },
+      generationConfig: {
+        maxOutputTokens: MAX_OUTPUT_TOKENS,
+        temperature: TEMPERATURE,
+        thinkingConfig: { thinkingBudget: THINKING_BUDGET },
+      },
     }),
   });
 
