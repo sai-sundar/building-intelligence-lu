@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Build output
+frontend/dist/
+.vercel/
+
+# Environment / secrets
+.env
+.env.local
+*.local
+
+# Python pipeline
+pipeline/.venv/
+__pycache__/
+*.pyc
+pipeline/raw/
+
+# OS / editor
+.DS_Store
+*.log
+.idea/
+.vscode/
