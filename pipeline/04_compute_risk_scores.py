@@ -24,15 +24,6 @@ import pandas as pd
 
 import config
 
-# Permit canton labels -> boundary canton names. The permits dataflow splits
-# Luxembourg into city vs rest and names Esch differently; the two Luxembourg
-# series are summed per year so each boundary canton has one trend.
-PERMIT_CANTON_TO_BOUNDARY = {
-    "Esch": "Esch-sur-Alzette",
-    "Luxembourg city": "Luxembourg",
-    "Luxembourg (except Luxembourg City)": "Luxembourg",
-}
-
 RISK_HIGH_THRESHOLD = 70
 RISK_MEDIUM_THRESHOLD = 40
 TREND_RISING = 1.10   # last5/prior5 ratio above this = "rising"
@@ -95,7 +86,7 @@ def commune_signals() -> pd.DataFrame:
 
 def canton_permit_trend() -> pd.DataFrame:
     df = pd.read_csv(config.PERMITS_RAW)
-    df["canton"] = df["canton_name"].replace(PERMIT_CANTON_TO_BOUNDARY)
+    df["canton"] = df["canton_name"].replace(config.PERMIT_CANTON_TO_BOUNDARY)
     yearly = df.groupby(["canton", "year"], as_index=False)["permits"].sum()
 
     rows = []
