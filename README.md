@@ -152,15 +152,17 @@ python 03_fetch_permits.py               # STATEC building-permit time series
 python 04_compute_risk_scores.py         # join + composite risk index
 python 05_export_geojson.py              # → frontend/src/data/{communes.geojson, stats.json}
 
-# 4a. Front end only (map + charts; AI narrative shows a graceful fallback)
+# 4. Start the app (full stack — map, charts, AND the AI narrative)
 cd ../frontend
 npm install
 npm run dev                              # http://localhost:5173
-
-# 4b. Full stack incl. the AI narrative API (requires the Vercel CLI)
-#     run from the repo root with GEMINI_API_KEY set in .env
-npx vercel dev                           # serves the front end + /api/* functions
 ```
+
+`npm run dev` runs a small dev-only Vite middleware (see `vite.config.js`) that serves the
+`/api` serverless functions locally, so the Gemini narrative works with just one command —
+it reads `GEMINI_API_KEY` from the repo-root `.env`. Without a key, the map and charts still
+work and the narrative shows a graceful fallback. (On Vercel, the real functions in `/api`
+are used; the middleware is dev-only.)
 
 ## Deployment
 
