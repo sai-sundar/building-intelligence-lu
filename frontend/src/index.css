@@ -20,3 +20,31 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Leaflet dark-theme overrides */
+.leaflet-container {
+  background: #0f1117;
+}
+
+.commune-tooltip {
+  background: #1a1d27;
+  border: 1px solid #2a2d3a;
+  color: #f1f5f9;
+  font-size: 12px;
+  border-radius: 6px;
+  padding: 6px 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.commune-tooltip::before {
+  border-top-color: #2a2d3a;
+}
+
+.leaflet-control-attribution {
+  background: rgba(15, 17, 23, 0.8) !important;
+  color: #64748b !important;
+}
+
+.leaflet-control-attribution a {
+  color: #94a3b8 !important;
+}
