@@ -1,0 +1,880 @@
+{
+  "generated_at": "2026-05-31T13:54:32+00:00",
+  "commune_count": 100,
+  "risk_distribution": {
+    "low": 52,
+    "medium": 43,
+    "high": 5
+  },
+  "score": {
+    "min": 0,
+    "max": 100,
+    "mean": 40.0
+  },
+  "national_era": [
+    {
+      "code": "Y_LT1919",
+      "label": "Before 1919",
+      "units": 21636,
+      "pct": 8.4
+    },
+    {
+      "code": "Y1919-1945",
+      "label": "1919\u20131945",
+      "units": 27329,
+      "pct": 10.6
+    },
+    {
+      "code": "Y1946-1960",
+      "label": "1946\u20131960",
+      "units": 26535,
+      "pct": 10.3
+    },
+    {
+      "code": "Y1961-1980",
+      "label": "1961\u20131980",
+      "units": 48847,
+      "pct": 18.9
+    },
+    {
+      "code": "Y1981-2000",
+      "label": "1981\u20132000",
+      "units": 53011,
+      "pct": 20.5
+    },
+    {
+      "code": "Y2001-2010",
+      "label": "2001\u20132010",
+      "units": 34730,
+      "pct": 13.4
+    },
+    {
+      "code": "Y2011-2015",
+      "label": "2011\u20132015",
+      "units": 19714,
+      "pct": 7.6
+    },
+    {
+      "code": "Y_GE2016",
+      "label": "2016 and later",
+      "units": 26540,
+      "pct": 10.3
+    }
+  ],
+  "permits_by_canton": {
+    "Capellen": [
+      {
+        "year": 2010,
+        "permits": 226
+      },
+      {
+        "year": 2011,
+        "permits": 236
+      },
+      {
+        "year": 2012,
+        "permits": 192
+      },
+      {
+        "year": 2013,
+        "permits": 167
+      },
+      {
+        "year": 2014,
+        "permits": 275
+      },
+      {
+        "year": 2015,
+        "permits": 157
+      },
+      {
+        "year": 2016,
+        "permits": 182
+      },
+      {
+        "year": 2017,
+        "permits": 279
+      },
+      {
+        "year": 2018,
+        "permits": 272
+      },
+      {
+        "year": 2019,
+        "permits": 329
+      },
+      {
+        "year": 2020,
+        "permits": 334
+      },
+      {
+        "year": 2021,
+        "permits": 398
+      },
+      {
+        "year": 2022,
+        "permits": 377
+      },
+      {
+        "year": 2023,
+        "permits": 231
+      },
+      {
+        "year": 2024,
+        "permits": 180
+      },
+      {
+        "year": 2025,
+        "permits": 287
+      }
+    ],
+    "Clervaux": [
+      {
+        "year": 2010,
+        "permits": 77
+      },
+      {
+        "year": 2011,
+        "permits": 89
+      },
+      {
+        "year": 2012,
+        "permits": 88
+      },
+      {
+        "year": 2013,
+        "permits": 95
+      },
+      {
+        "year": 2014,
+        "permits": 124
+      },
+      {
+        "year": 2015,
+        "permits": 80
+      },
+      {
+        "year": 2016,
+        "permits": 98
+      },
+      {
+        "year": 2017,
+        "permits": 98
+      },
+      {
+        "year": 2018,
+        "permits": 96
+      },
+      {
+        "year": 2019,
+        "permits": 116
+      },
+      {
+        "year": 2020,
+        "permits": 155
+      },
+      {
+        "year": 2021,
+        "permits": 187
+      },
+      {
+        "year": 2022,
+        "permits": 92
+      },
+      {
+        "year": 2023,
+        "permits": 52
+      },
+      {
+        "year": 2024,
+        "permits": 66
+      },
+      {
+        "year": 2025,
+        "permits": 46
+      }
+    ],
+    "Diekirch": [
+      {
+        "year": 2010,
+        "permits": 169
+      },
+      {
+        "year": 2011,
+        "permits": 143
+      },
+      {
+        "year": 2012,
+        "permits": 112
+      },
+      {
+        "year": 2013,
+        "permits": 127
+      },
+      {
+        "year": 2014,
+        "permits": 145
+      },
+      {
+        "year": 2015,
+        "permits": 93
+      },
+      {
+        "year": 2016,
+        "permits": 97
+      },
+      {
+        "year": 2017,
+        "permits": 95
+      },
+      {
+        "year": 2018,
+        "permits": 130
+      },
+      {
+        "year": 2019,
+        "permits": 165
+      },
+      {
+        "year": 2020,
+        "permits": 124
+      },
+      {
+        "year": 2021,
+        "permits": 156
+      },
+      {
+        "year": 2022,
+        "permits": 116
+      },
+      {
+        "year": 2023,
+        "permits": 96
+      },
+      {
+        "year": 2024,
+        "permits": 49
+      },
+      {
+        "year": 2025,
+        "permits": 57
+      }
+    ],
+    "Echternach": [
+      {
+        "year": 2010,
+        "permits": 71
+      },
+      {
+        "year": 2011,
+        "permits": 118
+      },
+      {
+        "year": 2012,
+        "permits": 89
+      },
+      {
+        "year": 2013,
+        "permits": 64
+      },
+      {
+        "year": 2014,
+        "permits": 66
+      },
+      {
+        "year": 2015,
+        "permits": 53
+      },
+      {
+        "year": 2016,
+        "permits": 79
+      },
+      {
+        "year": 2017,
+        "permits": 66
+      },
+      {
+        "year": 2018,
+        "permits": 63
+      },
+      {
+        "year": 2019,
+        "permits": 63
+      },
+      {
+        "year": 2020,
+        "permits": 73
+      },
+      {
+        "year": 2021,
+        "permits": 83
+      },
+      {
+        "year": 2022,
+        "permits": 69
+      },
+      {
+        "year": 2023,
+        "permits": 48
+      },
+      {
+        "year": 2024,
+        "permits": 42
+      },
+      {
+        "year": 2025,
+        "permits": 55
+      }
+    ],
+    "Esch-sur-Alzette": [
+      {
+        "year": 2010,
+        "permits": 234
+      },
+      {
+        "year": 2011,
+        "permits": 258
+      },
+      {
+        "year": 2012,
+        "permits": 282
+      },
+      {
+        "year": 2013,
+        "permits": 432
+      },
+      {
+        "year": 2014,
+        "permits": 477
+      },
+      {
+        "year": 2015,
+        "permits": 311
+      },
+      {
+        "year": 2016,
+        "permits": 281
+      },
+      {
+        "year": 2017,
+        "permits": 381
+      },
+      {
+        "year": 2018,
+        "permits": 375
+      },
+      {
+        "year": 2019,
+        "permits": 380
+      },
+      {
+        "year": 2020,
+        "permits": 352
+      },
+      {
+        "year": 2021,
+        "permits": 305
+      },
+      {
+        "year": 2022,
+        "permits": 359
+      },
+      {
+        "year": 2023,
+        "permits": 214
+      },
+      {
+        "year": 2024,
+        "permits": 199
+      },
+      {
+        "year": 2025,
+        "permits": 266
+      }
+    ],
+    "Grevenmacher": [
+      {
+        "year": 2010,
+        "permits": 150
+      },
+      {
+        "year": 2011,
+        "permits": 141
+      },
+      {
+        "year": 2012,
+        "permits": 174
+      },
+      {
+        "year": 2013,
+        "permits": 133
+      },
+      {
+        "year": 2014,
+        "permits": 156
+      },
+      {
+        "year": 2015,
+        "permits": 102
+      },
+      {
+        "year": 2016,
+        "permits": 102
+      },
+      {
+        "year": 2017,
+        "permits": 132
+      },
+      {
+        "year": 2018,
+        "permits": 97
+      },
+      {
+        "year": 2019,
+        "permits": 96
+      },
+      {
+        "year": 2020,
+        "permits": 145
+      },
+      {
+        "year": 2021,
+        "permits": 191
+      },
+      {
+        "year": 2022,
+        "permits": 128
+      },
+      {
+        "year": 2023,
+        "permits": 149
+      },
+      {
+        "year": 2024,
+        "permits": 165
+      },
+      {
+        "year": 2025,
+        "permits": 145
+      }
+    ],
+    "Luxembourg": [
+      {
+        "year": 2010,
+        "permits": 284
+      },
+      {
+        "year": 2011,
+        "permits": 265
+      },
+      {
+        "year": 2012,
+        "permits": 254
+      },
+      {
+        "year": 2013,
+        "permits": 243
+      },
+      {
+        "year": 2014,
+        "permits": 376
+      },
+      {
+        "year": 2015,
+        "permits": 290
+      },
+      {
+        "year": 2016,
+        "permits": 337
+      },
+      {
+        "year": 2017,
+        "permits": 279
+      },
+      {
+        "year": 2018,
+        "permits": 304
+      },
+      {
+        "year": 2019,
+        "permits": 393
+      },
+      {
+        "year": 2020,
+        "permits": 416
+      },
+      {
+        "year": 2021,
+        "permits": 466
+      },
+      {
+        "year": 2022,
+        "permits": 441
+      },
+      {
+        "year": 2023,
+        "permits": 326
+      },
+      {
+        "year": 2024,
+        "permits": 255
+      },
+      {
+        "year": 2025,
+        "permits": 186
+      }
+    ],
+    "Mersch": [
+      {
+        "year": 2010,
+        "permits": 153
+      },
+      {
+        "year": 2011,
+        "permits": 226
+      },
+      {
+        "year": 2012,
+        "permits": 185
+      },
+      {
+        "year": 2013,
+        "permits": 161
+      },
+      {
+        "year": 2014,
+        "permits": 177
+      },
+      {
+        "year": 2015,
+        "permits": 129
+      },
+      {
+        "year": 2016,
+        "permits": 139
+      },
+      {
+        "year": 2017,
+        "permits": 211
+      },
+      {
+        "year": 2018,
+        "permits": 147
+      },
+      {
+        "year": 2019,
+        "permits": 158
+      },
+      {
+        "year": 2020,
+        "permits": 202
+      },
+      {
+        "year": 2021,
+        "permits": 190
+      },
+      {
+        "year": 2022,
+        "permits": 158
+      },
+      {
+        "year": 2023,
+        "permits": 139
+      },
+      {
+        "year": 2024,
+        "permits": 94
+      },
+      {
+        "year": 2025,
+        "permits": 89
+      }
+    ],
+    "Redange": [
+      {
+        "year": 2010,
+        "permits": 113
+      },
+      {
+        "year": 2011,
+        "permits": 97
+      },
+      {
+        "year": 2012,
+        "permits": 120
+      },
+      {
+        "year": 2013,
+        "permits": 97
+      },
+      {
+        "year": 2014,
+        "permits": 142
+      },
+      {
+        "year": 2015,
+        "permits": 95
+      },
+      {
+        "year": 2016,
+        "permits": 153
+      },
+      {
+        "year": 2017,
+        "permits": 159
+      },
+      {
+        "year": 2018,
+        "permits": 140
+      },
+      {
+        "year": 2019,
+        "permits": 133
+      },
+      {
+        "year": 2020,
+        "permits": 174
+      },
+      {
+        "year": 2021,
+        "permits": 107
+      },
+      {
+        "year": 2022,
+        "permits": 136
+      },
+      {
+        "year": 2023,
+        "permits": 134
+      },
+      {
+        "year": 2024,
+        "permits": 60
+      },
+      {
+        "year": 2025,
+        "permits": 85
+      }
+    ],
+    "Remich": [
+      {
+        "year": 2010,
+        "permits": 87
+      },
+      {
+        "year": 2011,
+        "permits": 67
+      },
+      {
+        "year": 2012,
+        "permits": 65
+      },
+      {
+        "year": 2013,
+        "permits": 44
+      },
+      {
+        "year": 2014,
+        "permits": 63
+      },
+      {
+        "year": 2015,
+        "permits": 63
+      },
+      {
+        "year": 2016,
+        "permits": 80
+      },
+      {
+        "year": 2017,
+        "permits": 81
+      },
+      {
+        "year": 2018,
+        "permits": 66
+      },
+      {
+        "year": 2019,
+        "permits": 74
+      },
+      {
+        "year": 2020,
+        "permits": 76
+      },
+      {
+        "year": 2021,
+        "permits": 60
+      },
+      {
+        "year": 2022,
+        "permits": 87
+      },
+      {
+        "year": 2023,
+        "permits": 29
+      },
+      {
+        "year": 2024,
+        "permits": 52
+      },
+      {
+        "year": 2025,
+        "permits": 41
+      }
+    ],
+    "Vianden": [
+      {
+        "year": 2010,
+        "permits": 15
+      },
+      {
+        "year": 2011,
+        "permits": 18
+      },
+      {
+        "year": 2012,
+        "permits": 27
+      },
+      {
+        "year": 2013,
+        "permits": 19
+      },
+      {
+        "year": 2014,
+        "permits": 18
+      },
+      {
+        "year": 2015,
+        "permits": 22
+      },
+      {
+        "year": 2016,
+        "permits": 26
+      },
+      {
+        "year": 2017,
+        "permits": 31
+      },
+      {
+        "year": 2018,
+        "permits": 19
+      },
+      {
+        "year": 2019,
+        "permits": 13
+      },
+      {
+        "year": 2020,
+        "permits": 6
+      },
+      {
+        "year": 2021,
+        "permits": 19
+      },
+      {
+        "year": 2022,
+        "permits": 41
+      },
+      {
+        "year": 2023,
+        "permits": 20
+      },
+      {
+        "year": 2024,
+        "permits": 12
+      },
+      {
+        "year": 2025,
+        "permits": 6
+      }
+    ],
+    "Wiltz": [
+      {
+        "year": 2010,
+        "permits": 53
+      },
+      {
+        "year": 2011,
+        "permits": 72
+      },
+      {
+        "year": 2012,
+        "permits": 75
+      },
+      {
+        "year": 2013,
+        "permits": 112
+      },
+      {
+        "year": 2014,
+        "permits": 153
+      },
+      {
+        "year": 2015,
+        "permits": 99
+      },
+      {
+        "year": 2016,
+        "permits": 98
+      },
+      {
+        "year": 2017,
+        "permits": 60
+      },
+      {
+        "year": 2018,
+        "permits": 82
+      },
+      {
+        "year": 2019,
+        "permits": 126
+      },
+      {
+        "year": 2020,
+        "permits": 118
+      },
+      {
+        "year": 2021,
+        "permits": 129
+      },
+      {
+        "year": 2022,
+        "permits": 74
+      },
+      {
+        "year": 2023,
+        "permits": 61
+      },
+      {
+        "year": 2024,
+        "permits": 98
+      },
+      {
+        "year": 2025,
+        "permits": 73
+      }
+    ]
+  },
+  "risk_weights": {
+    "vacancy_rate": 0.45,
+    "small_building_share": 0.35,
+    "low_permit_trend": 0.2
+  },
+  "sources": [
+    {
+      "name": "Commune boundaries",
+      "provider": "ACT / geoportail.lu",
+      "license": "CC0"
+    },
+    {
+      "name": "2021 Census \u2014 Housing (DF_B1706/B1707)",
+      "provider": "STATEC",
+      "license": "CC0"
+    },
+    {
+      "name": "Building permits (DF_D4123)",
+      "provider": "STATEC",
+      "license": "CC0"
+    }
+  ]
+}
